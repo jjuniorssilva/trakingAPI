@@ -8,7 +8,7 @@ module.exports = {
   updateRouter() {
     try {
       const updateRouter = schedule.scheduleJob(
-        '30 * * * * *',
+        '10 * * * * *',
         
         async function () {
           await selectStateNow.execute();
